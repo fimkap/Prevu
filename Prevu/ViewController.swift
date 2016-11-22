@@ -10,10 +10,17 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var imagePreview: NSImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        DispatchQueue.main.async {
+            if (imagePath != nil) {
+                self.imagePreview.image = NSImage.init(contentsOfFile: imagePath)
+            }
+        }
     }
 
     override var representedObject: Any? {
@@ -21,7 +28,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 

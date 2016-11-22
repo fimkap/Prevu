@@ -13,6 +13,7 @@
 		2FC2EC0D1DE218CF001E612A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC2EC0B1DE218CF001E612A /* Main.storyboard */; };
 		2FC2EC181DE218CF001E612A /* PrevuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2EC171DE218CF001E612A /* PrevuTests.swift */; };
 		2FC2EC231DE218CF001E612A /* PrevuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2EC221DE218CF001E612A /* PrevuUITests.swift */; };
+		2FC2EC311DE219F4001E612A /* firefox.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC2EC301DE219F4001E612A /* firefox.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2FC2EC1E1DE218CF001E612A /* PrevuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrevuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC2EC221DE218CF001E612A /* PrevuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevuUITests.swift; sourceTree = "<group>"; };
 		2FC2EC241DE218CF001E612A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC2EC301DE219F4001E612A /* firefox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firefox.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2FC2EC091DE218CF001E612A /* Assets.xcassets */,
 				2FC2EC0B1DE218CF001E612A /* Main.storyboard */,
 				2FC2EC0E1DE218CF001E612A /* Info.plist */,
+				2FC2EC301DE219F4001E612A /* firefox.png */,
 			);
 			path = Prevu;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				2FC2EC0A1DE218CF001E612A /* Assets.xcassets in Resources */,
 				2FC2EC0D1DE218CF001E612A /* Main.storyboard in Resources */,
+				2FC2EC311DE219F4001E612A /* firefox.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
