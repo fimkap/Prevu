@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import AVFoundation
 
 class ViewController: NSViewController {
 
@@ -15,10 +16,20 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //imagePreview.layer?.contentsGravity = kCAGravityResizeAspectFill
+        
         // Do any additional setup after loading the view.
         DispatchQueue.main.async {
             if (imagePath != nil) {
-                self.imagePreview.image = NSImage.init(contentsOfFile: imagePath)
+                //self.imagePreview.image = NSImage.init(contentsOfFile: imagePath)
+                let newImage = NSImage.init(contentsOfFile: imagePath)
+                let rect = AVMakeRect(aspectRatio: newImage!.size, insideRect: self.imagePreview.bounds)
+                newImage!.size.width = rect.width
+                newImage!.size.height = rect.height
+                self.imagePreview.image = newImage
+                //print("image frame \(self.imagePreview.layer?.frame.size.width) \(self.imagePreview.layer?.frame.size.height)")
+                //self.imagePreview.layer?.contents = self.imagePreview.image
+                //self.imagePreview.wantsLayer = true
             }
         }
     }

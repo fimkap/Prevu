@@ -687,7 +687,7 @@
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAe-Z8-DZ7">
                                 <rect key="frame" x="112" y="7" width="256" height="256"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="firefox" id="UB2-Yu-mpJ"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="firefox" id="UB2-Yu-mpJ"/>
                             </imageView>
                         </subviews>
                         <constraints>

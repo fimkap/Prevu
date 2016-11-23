@@ -9,16 +9,19 @@
 import Cocoa
 
 // Model
-var imagePath: String!
+var imagePath: String! = nil
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        NSApplication.shared().activate(ignoringOtherApps: true)
         let args = CommandLine.arguments
         print("Args: \(args)")
-        imagePath = args[1]
+        if (args[1] != "-NSDocumentRevisionsDebugMode") {
+            imagePath = args[1]
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
