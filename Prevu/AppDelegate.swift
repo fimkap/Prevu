@@ -17,6 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         NSApplication.shared().activate(ignoringOtherApps: true)
+        NSApplication.shared().windows[0].isOpaque = false
+        NSApplication.shared().windows[0].backgroundColor = NSColor.clear
         let args = CommandLine.arguments
         print("Args: \(args)")
         if (args[1] != "-NSDocumentRevisionsDebugMode") {
