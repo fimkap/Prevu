@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F091B621DE8940F00B55B64 /* WindowOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F091B611DE8940F00B55B64 /* WindowOperations.swift */; };
+		2F091B641DE8AAFE00B55B64 /* LifeCycleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F091B631DE8AAFE00B55B64 /* LifeCycleManager.swift */; };
 		2FC2EC061DE218CF001E612A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2EC051DE218CF001E612A /* AppDelegate.swift */; };
 		2FC2EC081DE218CF001E612A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2EC071DE218CF001E612A /* ViewController.swift */; };
 		2FC2EC0A1DE218CF001E612A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC2EC091DE218CF001E612A /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F091B611DE8940F00B55B64 /* WindowOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowOperations.swift; sourceTree = "<group>"; };
+		2F091B631DE8AAFE00B55B64 /* LifeCycleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeCycleManager.swift; sourceTree = "<group>"; };
 		2FC2EC021DE218CF001E612A /* Prevu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prevu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC2EC051DE218CF001E612A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC2EC071DE218CF001E612A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F091B5D1DE890AA00B55B64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FC2EC071DE218CF001E612A /* ViewController.swift */,
+				2FC2EC051DE218CF001E612A /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2F091B5E1DE890C100B55B64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2F091B5F1DE890C800B55B64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2F091B601DE8938900B55B64 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2F091B611DE8940F00B55B64 /* WindowOperations.swift */,
+				2F091B631DE8AAFE00B55B64 /* LifeCycleManager.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
 		2FC2EBF91DE218CE001E612A = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +133,10 @@
 		2FC2EC041DE218CF001E612A /* Prevu */ = {
 			isa = PBXGroup;
 			children = (
-				2FC2EC051DE218CF001E612A /* AppDelegate.swift */,
-				2FC2EC071DE218CF001E612A /* ViewController.swift */,
+				2F091B5E1DE890C100B55B64 /* Model */,
+				2F091B5F1DE890C800B55B64 /* View */,
+				2F091B5D1DE890AA00B55B64 /* Controller */,
+				2F091B601DE8938900B55B64 /* Misc */,
 				2FC2EC091DE218CF001E612A /* Assets.xcassets */,
 				2FC2EC0B1DE218CF001E612A /* Main.storyboard */,
 				2FC2EC0E1DE218CF001E612A /* Info.plist */,
@@ -262,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F091B641DE8AAFE00B55B64 /* LifeCycleManager.swift in Sources */,
 				2FC2EC081DE218CF001E612A /* ViewController.swift in Sources */,
+				2F091B621DE8940F00B55B64 /* WindowOperations.swift in Sources */,
 				2FC2EC061DE218CF001E612A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +549,7 @@
 				2FC2EC291DE218CF001E612A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FC2EC2A1DE218CF001E612A /* Build configuration list for PBXNativeTarget "PrevuTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +558,7 @@
 				2FC2EC2C1DE218CF001E612A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FC2EC2D1DE218CF001E612A /* Build configuration list for PBXNativeTarget "PrevuUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +567,7 @@
 				2FC2EC2F1DE218CF001E612A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
