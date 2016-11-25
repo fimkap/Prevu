@@ -11,7 +11,7 @@
 + iOS 10.0 SDK or later
 
 ## About Prevu
-A small but smart application to preview the images always on top, without taking focus and with the transparent background. The main idea was to use it for the preview from the tools such as fzf.
+A small but smart application for macOS to preview the images always on top, without taking focus and with the transparent background. The main idea was to use it for the preview from the tools such as fzf.
 
 ## Application Architecture
 
