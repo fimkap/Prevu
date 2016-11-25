@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Handle arguments
         let args = CommandLine.arguments
         //print("Args: \(args)")
-        if (args[1] != "-NSDocumentRevisionsDebugMode") {
+        if (args.count > 1 && args[1] != "-NSDocumentRevisionsDebugMode") {
             imagePath = args[1]
         }
     }
