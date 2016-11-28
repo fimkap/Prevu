@@ -20,9 +20,9 @@ class ViewController: NSViewController {
         
         // Do any additional setup after loading the view.
         DispatchQueue.main.async {
-            if (imagePath != nil) {
-                //self.imagePreview.image = NSImage.init(contentsOfFile: imagePath)
-                let newImage = NSImage.init(contentsOfFile: imagePath)
+            if (image != nil) {
+                //self.imagePreview.image = NSImage.init(contentsOfFile: imagePath!)
+                let newImage = image!.image()
                 let rect = AVMakeRect(aspectRatio: newImage!.size, insideRect: self.imagePreview.bounds)
                 newImage!.size.width = rect.width
                 newImage!.size.height = rect.height

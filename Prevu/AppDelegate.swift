@@ -12,7 +12,7 @@ import Cocoa
 let MAIN_WINDOW = NSApplication.shared().windows[0]
 
 // Model
-var imagePath: String! = nil
+var image: Image? = nil
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -29,8 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Handle arguments
         let args = CommandLine.arguments
         //print("Args: \(args)")
-        if (args.count > 1 && args[1] != "-NSDocumentRevisionsDebugMode") {
-            imagePath = args[1]
+        if (args.count > 1 && Image.isValid( path: args[1])) {
+            image = Image( path: args[1])
         }
     }
 
