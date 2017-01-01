@@ -1,7 +1,7 @@
 # Prevu
 
 <a href="https://www.youtube.com/watch?v=LFUB_Wd1Ssc?rel=0&vq=large">
-  ![Swift on YouCompleteMe Video](http://i.imgur.com/EXEKC1B.gif)
+  ![Prevu Video](https://github.com/fimkap/Prevu/blob/master/Prevu.gif)
 </a>
 
 ## Version
