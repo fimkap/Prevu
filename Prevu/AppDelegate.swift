@@ -25,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Move window to the front and make transparent
         moveToFront( window: MAIN_WINDOW)
         makeTransparent( window: MAIN_WINDOW)
+        position( window: MAIN_WINDOW, point: NSPoint( x: 730.0, y: 240.0))
 
         // Handle arguments
         let args = CommandLine.arguments
